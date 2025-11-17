@@ -1,5 +1,6 @@
 package PrincipalCodigo;
-// Aqui haré el ménú interactivo con el que el ususrio interactua
+// Aqui haré el ménú interactivo con el que el usuario interactua
+//Un menú interactivo en donde se le da la opción al usuario de escribir la moneda para convertir.
 import java.util.Scanner;
 
 public class Menu {
