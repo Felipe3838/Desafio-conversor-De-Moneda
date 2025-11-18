@@ -10,7 +10,6 @@
 
 ## 📑 Índice 📑
 
-- [Sorteo de Amigo Secreto](#twisted_rightwards_arrows-sorteo-de-amigo-secreto)
 - [Descripción del Proyecto](#books-descripción-del-proyecto)
 - [Funcionalidades](#wrench-funcionalidades)
 - [Tecnologías utilizadas](#-tecnologías-utilizadas)
@@ -35,16 +34,7 @@ El usuario deberá agregar nombres mediante un campo de texto y un botón **"Adi
 
 ## :books: Descripción del Proyecto
 
-Este proyecto fue creado como parte de un desafío de aprendizaje,con el obejtivo de practicar lo aprendido e interactuar con:
 
-- El **Modelo de Objetos del Documento (DOM)** con JavaScript.
-- **Validaciones de entradas de texto segun los requerimientos propuestos en el desafío**.
-- Uso de **estructuras de datos** como listas/arrays para almacenar los nombres de las personas o los amigos ingresados.
-- **Selección aleatoria** con lógica de programación.
-- uso de **condicionales,cliclos y funciones**que interactuen según la aplicación de la lógica del autor del proyecto.
-- entre **otras.**
-
----
 
 ## :wrench: Funcionalidades
 <p align="center">
