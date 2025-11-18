@@ -1,82 +1,136 @@
-🪙 Conversor de Monedas – Challenge Alura Latam & Oracle ONE
-<p align="center"> <img src="https://i.postimg.cc/ZnSVJBq9/Captura-de-pantalla-2025-11-17-185011.png" alt="Portada del Proyecto: Conversor de Moneda"> </p>
-📑 Índice
+<h1 align="center">🪙 Conversor de Monedas – Challenge Alura Latam & Oracle ONE</h1> <p align="center"> <img src="https://i.postimg.cc/ZnSVJBq9/Captura-de-pantalla-2025-11-17-185011.png" alt="Portada del Proyecto: Conversor de Moneda" width="400"> </p> <p align="center">📛 Badges</p> <p align="center"> <img src="https://img.shields.io/badge/STATUS-En%20Desarrollo-green"> <img src="https://img.shields.io/badge/Java-17-blue"> <img src="https://img.shields.io/badge/Alura-Latam-orange"> <img src="https://img.shields.io/badge/Oracle-ONE-red"> </p>
+📑 Índice 📑
 
-🚀 Descripción del Proyecto
+Descripción del Proyecto
 
-🛠️ Tecnologías Utilizadas
+Funcionalidades
 
-📁 Estructura del Proyecto
+Tecnologías utilizadas
 
-▶️ Cómo Ejecutarlo
+Estructura del Proyecto
 
-🌐 API Utilizada
+Cómo usar este proyecto
 
-📌 Estado del Proyecto
+Validaciones implementadas
 
-👨‍💻 Autor
+Posibles mejoras futuras
 
-🚀 Descripción del Proyecto
+Autor
 
-Este es un conversor de monedas desarrollado en Java, realizado como parte del Challenge de Alura Latam en alianza con Oracle ONE.
+Licencia
 
-El programa se ejecuta desde consola y permite convertir diferentes divisas utilizando datos en tiempo real obtenidos desde una API externa.
+:books: Descripción del Proyecto
 
-🛠️ Tecnologías Utilizadas
+Este proyecto es un Conversor de Monedas desarrollado en Java, como parte del Challenge Alura Latam – Oracle Next Education (ONE).
 
-☕ Java 17
+El objetivo principal es permitir al usuario convertir valores entre diferentes monedas consultando una API de tasas de cambio en tiempo real.
+El programa funciona desde consola, mostrando un menú interactivo que permite seleccionar el tipo de conversión deseada y ver los resultados de forma clara.
 
-🌐 HTTP Client de Java
+:wrench: Funcionalidades
 
-🔄 API de tasas de cambio
+✔️ Menú interactivo por consola
+El usuario elige el tipo de conversión mediante opciones numéricas.
 
-🧰 IntelliJ IDEA / VSCode
+✔️ Conversión entre diferentes monedas
+Dependiendo de lo implementado, por ejemplo:
 
-🧪 JSON
+COP → USD
 
-📁 Estructura del Proyecto
+USD → COP
+
+COP → EUR
+
+COP → ARS
+
+Entre otras.
+
+✔️ Consumo de API externa (Exchange Rate API u otra)
+El programa obtiene las tasas actualizadas realizando una solicitud HTTP.
+
+✔️ Procesamiento de JSON
+Se extraen valores específicos para realizar cálculos.
+
+✔️ Cálculo automático del valor convertido
+Se muestra el resultado con formato legible.
+
+✔️ Opción para salir del programa
+
+🧠 Tecnologías utilizadas
+
+Java 17
+
+<p align="center"> <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" width="120"> </p>
+
+HTTP Client para consultar la API
+
+JSON para procesar los datos recibidos
+
+:card_file_box: Estructura del Proyecto
 📁 src/
 └── PrincipalCodigo/
-    ├── AnalizandoJson.java        # Procesa y organiza los datos recibidos en formato JSON
-    ├── ConsultarMonedaApi.java    # Realiza la petición HTTP a la API de tasas de cambio
-    ├── Conversor.java             # Lógica principal de conversión entre monedas
-    └── Menu.java                  # Menú interactivo y flujo del programa
+    ├── AnalizandoJson.java        # Procesa y organiza los datos del JSON recibido
+    ├── ConsultarMonedaApi.java    # Realiza la petición HTTP a la API
+    ├── Conversor.java             # Lógica principal del conversor
+    └── Menu.java                  # Control del menú y flujo del programa
 
-▶️ Cómo Ejecutarlo
-1️⃣ Clona el repositorio
+🛠️ ¿Cómo usar este proyecto?
+
+Clona el repositorio
+
 git clone https://github.com/Felipe3838/Desafio-conversor-De-Moneda.git
 
-2️⃣ Entra en la carpeta
-cd Desafio-conversor-De-Moneda
 
-3️⃣ Ejecuta el programa
+Abre el proyecto en tu IDE favorito
+(IntelliJ IDEA, Eclipse, VS Code con extensión Java, etc.)
 
-Compila y ejecuta desde consola:
+Ejecuta la clase donde tengas el método main, por ejemplo:
 
-javac src/PrincipalCodigo/*.java
-java src/PrincipalCodigo/Menu
+public static void main(String[] args) {
+    Menu menu = new Menu();
+    menu.mostraMenu();
+}
 
 
-O simplemente ejecútalo desde tu IDE.
+Interactúa con el menú en consola
 
-🌐 API Utilizada
+Selecciona la conversión deseada
 
-El programa obtiene tasas de cambio en tiempo real desde una API externa en formato JSON, la cual es procesada dentro de AnalizandoJson.java.
+Ingresa el valor
 
-📌 Estado del Proyecto
+Mira el resultado calculado
 
-🚧 En desarrollo
-Mejoras futuras:
+:computer: Validaciones implementadas
 
-Nuevas monedas
+❌ No se permiten valores vacíos o no numéricos
 
-Mejor manejo de errores
+❌ No se permiten valores negativos
 
-Validación avanzada de datos
+❌ Manejo de errores si la API falla
 
-Menú más intuitivo
+✔️ Verificación de opciones incorrectas en el menú
+
+💡 Posibles mejoras futuras
+
+Agregar interfaz gráfica (Swing / JavaFX)
+
+Añadir más monedas disponibles
+
+Guardar historial de conversiones
+
+Implementar manejo de excepciones más detallado
+
+Crear pruebas unitarias (JUnit)
 
 👨‍💻 Autor
 
-Brayan Felipe Muñoz
-Estudiante – Alura Latam & Oracle ONE
+Brayan Felipe Muñoz S
+
+GitHub: @Felipe3838
+
+LinkedIn: https://www.linkedin.com/in/brayan-felipe-mu%C3%B1oz/
+
+📃 Licencia
+
+Proyecto desarrollado con fines educativos como parte del programa
+Oracle Next Education – Alura Latam.
+Libre para usar, modificar y compartir.
