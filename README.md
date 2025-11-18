@@ -7,119 +7,72 @@
 </p>
 <p align="center">📛 Badges</p>
 <p align="center"> <img src="https://img.shields.io/badge/STATUS-EN%20DESARROLLO-green"> <img src="https://img.shields.io/badge/Java-17-blue"> <img src="https://img.shields.io/badge/Alura-Latam-orange"> <img src="https://img.shields.io/badge/Oracle-ONE-red"> </p>
-📚 Índice
 
-Descripción del Proyecto
+# :twisted_rightwards_arrows: Mi primera página web
+<p align="center">
+  <img src="https://static.skillshare.com/uploads/video/thumbnails/c38251fc34fe43812b476c376c5d6945/1280-720" width="200">
+</p>
 
-Estado del Proyecto
+**Mi primer portafolio** es una **aplicación web básica** desarrollada con **HTML** y **CSS**,como desafio en practica en **Oracle Next-Education** – curso de tecnología, cuyo objetivo principal es **fortalecer y promover las habilidades en lógica de programación** y, por supuesto, aplicar los conocimientos vistos en los cursos vistos durante el trayecto del curso.
+Este proyecto refleja mi aprendizaje durante el programa en donde se representa un portafolio personal sobre las habilidades y destrezas que me caracterizan.Mi proyecto esta compuesto por tres páginas principales: En la primera una descripción breve y enlaces directos a redes sociales,en la segunda una descripción corta de mi trayactoria y por ultimo;un pequeño portafolio personal.
+Estos conocimientos me estan permitiendo aprender cada día más y aplicarlos en proyectos innovadores en entornos reales.
 
-Funcionalidades
+---
 
-Demostración
+## :wrench: Imagen del proyecto
+<p align="center">
+    <img src="https://github.com/Felipe3838/Portafolio-Mi-Primera-P-gina-Curso/blob/main/assets/Captura%20de%20pantalla%202025-09-21%20213147.png" width="500">
+  </p>
+  
+---
 
-Acceso al Proyecto
+## 🧠 Tecnologías utilizadas
 
-Cómo Ejecutarlo
+- **HTML**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/58204778-1132-4f2f-80ec-8b69f98f0407" width="200">
+  </p>
 
-Tecnologías Utilizadas
+- **CSS**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/0c70133e-2f53-4313-bbab-1390918f51b5" width="200">
+  </p>
 
-Personas Contribuyentes
+- **JavaScript**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/4ada2a2f-c240-4d67-a157-ffcb0970afc0" width="200">
+  </p>
+  
+---
 
-Autor
+## 🛠️ ¿Cómo usar este proyecto?
 
-Licencia
+1. **Clona el repositorio o si es preferible descargarlo en archivo RAR para probar sin necesidad de clonarlo:**
 
-📝 Descripción del Proyecto
+```bash
+git clone https://github.com/Felipe3838/challenge-amigo-secreto-Oracle-Next-Educaci-n
+```
 
-El Conversor de Monedas es un proyecto desarrollado en Java, ejecutado por consola, como parte del Challenge de Alura Latam – Oracle ONE.
-El objetivo principal es poner a prueba nuestra lógica de programación, aprender a consumir una API de tasas de cambio, manejar clases, objetos, validaciones y presentar un menú interactivo al usuario.
+2. **Luego abre el archivo `index.html` en tu navegador que está dentro de la carpeta donde clonaste el proyecto** (doble clic para iniciarlo y abrir el el navegador).
 
-El programa permite convertir valores entre seis tipos de monedas, utilizando datos reales obtenidos desde una API.
+3. :computer:**Usa la aplicación**:
 
-🚧 Estado del Proyecto
-<h4 align="center">🛠️ Proyecto en desarrollo 🛠️</h4>
+- Interactua por la pagina principal y accede a mis redes sociales 
+- Interactua sobre la segunda página y concoe un poco sobre mí
+- Interactua por la tercera página y hecha un vistazo a mi portafolio
+  
+---
 
-—
+## 👨‍💻 Autor
 
-🔨 Funcionalidades
+- **Brayan Ferlipe Muñoz S**
+- GitHub: [@Felipe3838](https://github.com/Felipe3838)
+- Linkedin: (https://www.linkedin.com/in/brayan-felipe-mu%C3%B1oz/)
 
-Conversión 1: Peso Colombiano → Dólar
+---
 
-Conversión 2: Dólar → Peso Colombiano
+## 📃 Licencia
 
-Conversión 3: Peso Colombiano → Euro
+Este proyecto se ha desarrollado con fines educativos aplicables a los conocimientos visto dentro del curso **Oracle Nest Education**. Puedes usarlo, modificarlo y compartirlo libremente.
 
-Conversión 4: Euro → Peso Colombiano
-
-Conversión 5: Peso Colombiano → Yen Japonés
-
-Conversión 6: Peso Colombiano → Won Surcoreano
-
-Funcionalidad Extra: Consulta de tasas en tiempo real usando una API externa
-
-Funcionalidad Extra: Validación de entradas del usuario
-
-(Puedes ajustar las monedas exactas si tu programa usa otras)
-
-🎥 Demostración
-
-(Aquí puedes insertar un GIF mostrando el programa en consola. Si quieres, te lo hago.)
-
-Ejemplo:
-
-Usuario selecciona una opción → ingresa monto → el sistema consulta la API → devuelve el valor convertido.
-
-📁 Acceso al Proyecto
-
-Puedes acceder al repositorio aquí:
-
-👉 https://github.com/Felipe3838/Desafio-conversor-De-Moneda
-
-Para descargarlo:
-
-git clone https://github.com/Felipe3838/Desafio-conversor-De-Moneda.git
-
-🛠️ Cómo Ejecutarlo
-
-Clona el repositorio.
-
-Abre el proyecto en tu IDE (IntelliJ, VSCode o Eclipse).
-
-Asegúrate de tener Java 17 o superior.
-
-Ejecuta el archivo:
-
-src/PrincipalCodigo/Main.java
-
-
-Sigue el menú interactivo en consola.
-
-🧪 Tecnologías Utilizadas
-
-Java 17
-
-HTTP Client para consultas a API
-
-Gson / Jackson para procesar JSON
-
-API Exchange Rates (o la que estés usando)
-
-Programación Orientada a Objetos
-
-🤝 Personas Contribuyentes
-
-Este proyecto fue desarrollado como parte del trabajo personal del Challenge ONE.
-Si más personas contribuyen, puedes agregarlas así:
-
-Nombre	Rol	Github
-Tú	Desarrollador	https://github.com/Felipe3838
-👨‍💻 Autor
-<img src="https://avatars.githubusercontent.com/u/000?v=4" width="115"><br><sub>Brayan Felipe Muñoz</sub>
-@Felipe3838
-
-(Si me das tu foto de GitHub, la pongo exacta)
-
-📜 Licencia
-
-Este proyecto se realizó con fines educativos para el programa Oracle Next Education – Alura Latam.
-Puedes modificarlo y usarlo libremente.
+---
