@@ -63,12 +63,16 @@ JSON para procesar los datos recibidos
 
 ## :card_file_box: Estructura del Proyecto
 
+```plaintext
 📁 src/
 └── PrincipalCodigo/
     ├── AnalizandoJson.java        # Procesa y organiza los datos del JSON recibido
     ├── ConsultarMonedaApi.java    # Realiza la petición HTTP a la API
     ├── Conversor.java             # Lógica principal del conversor-Aqui están los métodos de conversión
     └── Menu.java                  # Control del menú y flujo del programa y donde se interactua con el usuario.
+```
+
+---
 
 ## 🛠️ ¿Cómo usar este proyecto?
 
