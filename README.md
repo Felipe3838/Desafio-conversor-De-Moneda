@@ -1,130 +1,136 @@
-<h1 align="center">🪙 Conversor de Monedas – Challenge Alura Latam & Oracle ONE</h1>
+<h1 align="center">🪙 Conversor de Monedas – Challenge Alura Latam & Oracle ONE</h1> <p align="center"> <img src="https://i.postimg.cc/ZnSVJBq9/Captura-de-pantalla-2025-11-17-185011.png" alt="Portada del Proyecto: Conversor de Moneda" width="400"> </p> <p align="center">📛 Badges</p> <p align="center"> <img src="https://img.shields.io/badge/STATUS-En%20Desarrollo-green"> <img src="https://img.shields.io/badge/Java-17-blue"> <img src="https://img.shields.io/badge/Alura-Latam-orange"> <img src="https://img.shields.io/badge/Oracle-ONE-red"> </p>
+📑 Índice 📑
 
-<p align="center">
-  <img src="https://i.postimg.cc/ZnSVJBq9/Captura-de-pantalla-2025-11-17-185011.png"
-       alt="Portada del Proyecto: Conversor de Moneda"
-       width="400">
-</p>
-<p align="center">📛 Badges</p>
-<p align="center"> <img src="https://img.shields.io/badge/STATUS-EN%20DESARROLLO-green"> <img src="https://img.shields.io/badge/Java-17-blue"> <img src="https://img.shields.io/badge/Alura-Latam-orange"> <img src="https://img.shields.io/badge/Oracle-ONE-red"> </p>
+Descripción del Proyecto
 
-## 📑 Índice 📑
+Funcionalidades
 
-- [Descripción del Proyecto](#books-descripción-del-proyecto)
-- [Funcionalidades](#wrench-funcionalidades)
-- [Tecnologías utilizadas](#-tecnologías-utilizadas)
-- [Estructura del Proyecto](#card_file_box-estructura-del-proyecto)
-- [Cómo usar este proyecto](#️-cómo-usar-este-proyecto)
-- [Validaciones implementadas](#computer-validaciones-implementadas)
-- [Posibles mejoras futuras](#-posibles-mejoras-futuras)
-- [Autor](#-autor)
-- [Licencia](#-licencia)
-# :twisted_rightwards_arrows: Sorteo de Amigo Secreto
-<p align="center">
-  <img src="https://static.skillshare.com/uploads/video/thumbnails/c38251fc34fe43812b476c376c5d6945/1280-720" width="200">
-</p>
+Tecnologías utilizadas
 
-**Sorteo de Amigo Secreto** es una **aplicación web interactiva** desarrollada con **JavaScript**, **HTML** y **CSS**, y propuesta por **Oracle Next-Education** – curso de tecnología, cuyo objetivo principal es **fortalecer y promover las habilidades en lógica de programación** y, por supuesto, aplicar los conocimientos vistos en los cursos **Lógica de programación: sumérgete en la programación con JavaScript** y **Lógica de programación: explorar funciones y listas**.  
-Esta herramienta permite simular el juego de "amigo secreto o amigo aleatorio", donde se agregan nombres a una lista para luego realizar un sorteo aleatorio y seleccionar un participante.
-una aplicación que permita a los usuarios ingresar nombres de amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
+Estructura del Proyecto
 
-El usuario deberá agregar nombres mediante un campo de texto y un botón **"Adicionar".** Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón **"Sortear Amigo"** seleccionará uno de los nombres de forma aleatoria, mostrando el resultado en pantalla.
+Cómo usar este proyecto
 
----
+Validaciones implementadas
 
-## :books: Descripción del Proyecto
+Posibles mejoras futuras
+
+Autor
+
+Licencia
+
+:books: Descripción del Proyecto
+
+Este proyecto es un Conversor de Monedas desarrollado en Java, como parte del Challenge Alura Latam – Oracle Next Education (ONE).
+
+El objetivo principal es permitir al usuario convertir valores entre diferentes monedas consultando una API de tasas de cambio en tiempo real.
+El programa funciona desde consola, mostrando un menú interactivo que permite seleccionar el tipo de conversión deseada y ver los resultados de forma clara.
+
+:wrench: Funcionalidades
+
+✔️ Menú interactivo por consola
+El usuario elige el tipo de conversión mediante opciones numéricas.
+
+✔️ Conversión entre diferentes monedas
+Dependiendo de lo implementado, por ejemplo:
+
+COP → USD
+
+USD → COP
+
+COP → EUR
+
+COP → ARS
+
+Entre otras.
+
+✔️ Consumo de API externa (Exchange Rate API u otra)
+El programa obtiene las tasas actualizadas realizando una solicitud HTTP.
+
+✔️ Procesamiento de JSON
+Se extraen valores específicos para realizar cálculos.
+
+✔️ Cálculo automático del valor convertido
+Se muestra el resultado con formato legible.
+
+✔️ Opción para salir del programa
+
+🧠 Tecnologías utilizadas
+
+Java 17
+
+<p align="center"> <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" width="120"> </p>
+
+HTTP Client para consultar la API
+
+JSON para procesar los datos recibidos
+
+:card_file_box: Estructura del Proyecto
+📁 src/
+└── PrincipalCodigo/
+    ├── AnalizandoJson.java        # Procesa y organiza los datos del JSON recibido
+    ├── ConsultarMonedaApi.java    # Realiza la petición HTTP a la API
+    ├── Conversor.java             # Lógica principal del conversor
+    └── Menu.java                  # Control del menú y flujo del programa
+
+🛠️ ¿Cómo usar este proyecto?
+
+Clona el repositorio
+
+git clone https://github.com/Felipe3838/Desafio-conversor-De-Moneda.git
 
 
+Abre el proyecto en tu IDE favorito
+(IntelliJ IDEA, Eclipse, VS Code con extensión Java, etc.)
 
-## :wrench: Funcionalidades
-<p align="center">
-    <img src="https://i.postimg.cc/d1gj35GR/Captura-de-pantalla-2025-08-08-172029.png" width="500">
-  </p>
-Primero se crea una lista llamada `amigos` donde se almacenarán todos los nombres registrados.  
+Ejecuta la clase donde tengas el método main, por ejemplo:
 
-1. :white_check_mark:**Agregar amigos a la lista** 
-   Permite registrar nuevos nombres en `listanombreAmigosParaSortear`, validando que no estén vacíos,no aceptando números ni carácteres especiales y limpiando el campo tras añadirlos.  
+public static void main(String[] args) {
+    Menu menu = new Menu();
+    menu.mostraMenu();
+}
 
-2. :white_check_mark:**Mostrar la lista de amigos**  
-   Muestra en pantalla los nombres del arreglo `amigos` en una lista de forma visual para el ususrio, evitando duplicados y actualizando constantemente.  
 
-3. :white_check_mark:**Sortear un amigo**  
-   Selecciona aleatoriamente un nombre de `amigos` y lo muestra en pantalla,y se concluye así el objetivo principal del programa. 
----
+Interactúa con el menú en consola
 
-## 🧠 Tecnologías utilizadas
+Selecciona la conversión deseada
 
-- **HTML**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/58204778-1132-4f2f-80ec-8b69f98f0407" width="200">
-  </p>
+Ingresa el valor
 
-- **CSS**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/0c70133e-2f53-4313-bbab-1390918f51b5" width="200">
-  </p>
+Mira el resultado calculado
 
-- **JavaScript**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/4ada2a2f-c240-4d67-a157-ffcb0970afc0" width="200">
-  </p>
----
+:computer: Validaciones implementadas
 
-## :card_file_box: Estructura del Proyecto
+❌ No se permiten valores vacíos o no numéricos
 
-```plaintext
-📁 Proyecto-Amigo-Secreto/
-├── index.html         # Estructura principal
-├── style.css          # Estilos visuales para la página.
-├── script.js          # Lógica e interactividad en JavaScript
-└── README.md          # Documentación del proyecto
-```
+❌ No se permiten valores negativos
 
----
+❌ Manejo de errores si la API falla
 
-## 🛠️ ¿Cómo usar este proyecto?
+✔️ Verificación de opciones incorrectas en el menú
 
-1. **Clona el repositorio o si es preferible descargarlo en archivo RAR para probar sin necesidad de clonarlo:**
+💡 Posibles mejoras futuras
 
-```bash
-git clone https://github.com/Felipe3838/challenge-amigo-secreto-Oracle-Next-Educaci-n
-```
+Agregar interfaz gráfica (Swing / JavaFX)
 
-2. **Luego abre el archivo `index.html` en tu navegador que está dentro de la carpeta donde clonaste el proyecto** (doble clic para iniciarlo y abrir el el navegador).
+Añadir más monedas disponibles
 
-3. :computer:**Usa la aplicación**:
+Guardar historial de conversiones
 
-- Escribe un nombre en el campo de texto.
-- los nombres que vayas agrgando,irán apareciendo en la pantalla.
-- Haz clic en **"Agregar amigo"**.
-- Una vez que haya varios nombres, haz clic en **"Sortear amigo"** para seleccionar un amigo secreto al azar.
+Implementar manejo de excepciones más detallado
 
----
+Crear pruebas unitarias (JUnit)
 
-## :computer: Validaciones implementadas
+👨‍💻 Autor
 
-- ❌ No se permiten campos vacíos.Si el usuario le da a **añadir** sin haber escrito un nombre,hará la validación correspondiente.
-- ❌ No se permiten caracteres especiales ni números.Si el usuario escribe **números o caracteres especiales**hará la validación correspondiente.
-- ❌ No se permiten nombres repetidos.Hsta el momento si escribes **Felipe** y vulves y agrgas a **Felipe** hara la validación correspondiente y no dejará agrgar nombres repetidos.
+Brayan Felipe Muñoz S
 
----
+GitHub: @Felipe3838
 
-## 💡 Posibles mejoras futuras
+LinkedIn: https://www.linkedin.com/in/brayan-felipe-mu%C3%B1oz/
 
-- Agregar estilos visuales más atractivos.
-- Implementar la opción de **eliminar nombres**en caso de un posible error de ingreso.
-- Añadir un botón para **reiniciar el sorteo**.y por supuesto limpiar los datos ya ingresados despues del sorteo
+📃 Licencia
 
----
-
-## 👨‍💻 Autor
-
-- **Brayan Ferlipe Muñoz S**
-- GitHub: [@Felipe3838](https://github.com/Felipe3838)
-- Linkedin: (https://www.linkedin.com/in/brayan-felipe-mu%C3%B1oz/)
-
----
-
-## 📃 Licencia
-
-Este proyecto se ha desarrollado con fines educativos aplicables a los conocimientos visto dentro del curso **Oracle Nest Education**. Puedes usarlo, modificarlo y compartirlo libremente.
+Proyecto desarrollado con fines educativos como parte del programa
+Oracle Next Education – Alura Latam.
+Libre para usar, modificar y compartir.
