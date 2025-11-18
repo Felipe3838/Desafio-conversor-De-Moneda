@@ -26,13 +26,13 @@ El programa se ejecuta desde consola y permite convertir diferentes divisas util
 
 ☕ Java 17
 
-🌐 HTTP Client nativo de Java
+🌐 HTTP Client de Java
 
-🔄 API ExchangeRate API/Alura
+🔄 API de tasas de cambio
 
 🧰 IntelliJ IDEA / VSCode
 
-🧪 JSON y manejo de respuestas
+🧪 JSON
 
 📁 Estructura del Proyecto
 📁 src/
@@ -51,34 +51,32 @@ cd Desafio-conversor-De-Moneda
 
 3️⃣ Ejecuta el programa
 
-Puedes compilarlo desde consola con:
+Compila y ejecuta desde consola:
 
 javac src/PrincipalCodigo/*.java
 java src/PrincipalCodigo/Menu
 
 
-O simplemente correrlo desde tu IDE (IntelliJ / VSCode).
+O simplemente ejecútalo desde tu IDE.
 
 🌐 API Utilizada
 
-El programa obtiene las tasas de cambio en tiempo real desde una API de conversión de moneda.
-
-Se usan datos en formato JSON que luego son procesados dentro de la clase AnalizandoJson.
+El programa obtiene tasas de cambio en tiempo real desde una API externa en formato JSON, la cual es procesada dentro de AnalizandoJson.java.
 
 📌 Estado del Proyecto
 
-🚧 En desarrollo – Se planea agregar:
-
-Menú más interactivo ✔️
+🚧 En desarrollo
+Mejoras futuras:
 
 Nuevas monedas
 
-Manejo de excepciones
+Mejor manejo de errores
 
-Validación de entrada del usuario
+Validación avanzada de datos
+
+Menú más intuitivo
 
 👨‍💻 Autor
 
 Brayan Felipe Muñoz
-📚 Estudiante – Alura Latam & Oracle ONE
-💼 Linkedin (opcional si quieres agregarlo)
+Estudiante – Alura Latam & Oracle ONE
