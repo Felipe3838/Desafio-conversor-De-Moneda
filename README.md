@@ -8,22 +8,58 @@
 <p align="center">📛 Badges</p>
 <p align="center"> <img src="https://img.shields.io/badge/STATUS-EN%20DESARROLLO-green"> <img src="https://img.shields.io/badge/Java-17-blue"> <img src="https://img.shields.io/badge/Alura-Latam-orange"> <img src="https://img.shields.io/badge/Oracle-ONE-red"> </p>
 
-# :twisted_rightwards_arrows: Mi primera página web
+## 📑 Índice 📑
+
+- [Sorteo de Amigo Secreto](#twisted_rightwards_arrows-sorteo-de-amigo-secreto)
+- [Descripción del Proyecto](#books-descripción-del-proyecto)
+- [Funcionalidades](#wrench-funcionalidades)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [Estructura del Proyecto](#card_file_box-estructura-del-proyecto)
+- [Cómo usar este proyecto](#️-cómo-usar-este-proyecto)
+- [Validaciones implementadas](#computer-validaciones-implementadas)
+- [Posibles mejoras futuras](#-posibles-mejoras-futuras)
+- [Autor](#-autor)
+- [Licencia](#-licencia)
+# :twisted_rightwards_arrows: Sorteo de Amigo Secreto
 <p align="center">
   <img src="https://static.skillshare.com/uploads/video/thumbnails/c38251fc34fe43812b476c376c5d6945/1280-720" width="200">
 </p>
 
-**Mi primer portafolio** es una **aplicación web básica** desarrollada con **HTML** y **CSS**,como desafio en practica en **Oracle Next-Education** – curso de tecnología, cuyo objetivo principal es **fortalecer y promover las habilidades en lógica de programación** y, por supuesto, aplicar los conocimientos vistos en los cursos vistos durante el trayecto del curso.
-Este proyecto refleja mi aprendizaje durante el programa en donde se representa un portafolio personal sobre las habilidades y destrezas que me caracterizan.Mi proyecto esta compuesto por tres páginas principales: En la primera una descripción breve y enlaces directos a redes sociales,en la segunda una descripción corta de mi trayactoria y por ultimo;un pequeño portafolio personal.
-Estos conocimientos me estan permitiendo aprender cada día más y aplicarlos en proyectos innovadores en entornos reales.
+**Sorteo de Amigo Secreto** es una **aplicación web interactiva** desarrollada con **JavaScript**, **HTML** y **CSS**, y propuesta por **Oracle Next-Education** – curso de tecnología, cuyo objetivo principal es **fortalecer y promover las habilidades en lógica de programación** y, por supuesto, aplicar los conocimientos vistos en los cursos **Lógica de programación: sumérgete en la programación con JavaScript** y **Lógica de programación: explorar funciones y listas**.  
+Esta herramienta permite simular el juego de "amigo secreto o amigo aleatorio", donde se agregan nombres a una lista para luego realizar un sorteo aleatorio y seleccionar un participante.
+una aplicación que permita a los usuarios ingresar nombres de amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
+
+El usuario deberá agregar nombres mediante un campo de texto y un botón **"Adicionar".** Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón **"Sortear Amigo"** seleccionará uno de los nombres de forma aleatoria, mostrando el resultado en pantalla.
 
 ---
 
-## :wrench: Imagen del proyecto
+## :books: Descripción del Proyecto
+
+Este proyecto fue creado como parte de un desafío de aprendizaje,con el obejtivo de practicar lo aprendido e interactuar con:
+
+- El **Modelo de Objetos del Documento (DOM)** con JavaScript.
+- **Validaciones de entradas de texto segun los requerimientos propuestos en el desafío**.
+- Uso de **estructuras de datos** como listas/arrays para almacenar los nombres de las personas o los amigos ingresados.
+- **Selección aleatoria** con lógica de programación.
+- uso de **condicionales,cliclos y funciones**que interactuen según la aplicación de la lógica del autor del proyecto.
+- entre **otras.**
+
+---
+
+## :wrench: Funcionalidades
 <p align="center">
-    <img src="https://github.com/Felipe3838/Portafolio-Mi-Primera-P-gina-Curso/blob/main/assets/Captura%20de%20pantalla%202025-09-21%20213147.png" width="500">
+    <img src="https://i.postimg.cc/d1gj35GR/Captura-de-pantalla-2025-08-08-172029.png" width="500">
   </p>
-  
+Primero se crea una lista llamada `amigos` donde se almacenarán todos los nombres registrados.  
+
+1. :white_check_mark:**Agregar amigos a la lista** 
+   Permite registrar nuevos nombres en `listanombreAmigosParaSortear`, validando que no estén vacíos,no aceptando números ni carácteres especiales y limpiando el campo tras añadirlos.  
+
+2. :white_check_mark:**Mostrar la lista de amigos**  
+   Muestra en pantalla los nombres del arreglo `amigos` en una lista de forma visual para el ususrio, evitando duplicados y actualizando constantemente.  
+
+3. :white_check_mark:**Sortear un amigo**  
+   Selecciona aleatoriamente un nombre de `amigos` y lo muestra en pantalla,y se concluye así el objetivo principal del programa. 
 ---
 
 ## 🧠 Tecnologías utilizadas
@@ -42,7 +78,18 @@ Estos conocimientos me estan permitiendo aprender cada día más y aplicarlos en
   <p align="center">
     <img src="https://github.com/user-attachments/assets/4ada2a2f-c240-4d67-a157-ffcb0970afc0" width="200">
   </p>
-  
+---
+
+## :card_file_box: Estructura del Proyecto
+
+```plaintext
+📁 Proyecto-Amigo-Secreto/
+├── index.html         # Estructura principal
+├── style.css          # Estilos visuales para la página.
+├── script.js          # Lógica e interactividad en JavaScript
+└── README.md          # Documentación del proyecto
+```
+
 ---
 
 ## 🛠️ ¿Cómo usar este proyecto?
@@ -57,10 +104,27 @@ git clone https://github.com/Felipe3838/challenge-amigo-secreto-Oracle-Next-Educ
 
 3. :computer:**Usa la aplicación**:
 
-- Interactua por la pagina principal y accede a mis redes sociales 
-- Interactua sobre la segunda página y concoe un poco sobre mí
-- Interactua por la tercera página y hecha un vistazo a mi portafolio
-  
+- Escribe un nombre en el campo de texto.
+- los nombres que vayas agrgando,irán apareciendo en la pantalla.
+- Haz clic en **"Agregar amigo"**.
+- Una vez que haya varios nombres, haz clic en **"Sortear amigo"** para seleccionar un amigo secreto al azar.
+
+---
+
+## :computer: Validaciones implementadas
+
+- ❌ No se permiten campos vacíos.Si el usuario le da a **añadir** sin haber escrito un nombre,hará la validación correspondiente.
+- ❌ No se permiten caracteres especiales ni números.Si el usuario escribe **números o caracteres especiales**hará la validación correspondiente.
+- ❌ No se permiten nombres repetidos.Hsta el momento si escribes **Felipe** y vulves y agrgas a **Felipe** hara la validación correspondiente y no dejará agrgar nombres repetidos.
+
+---
+
+## 💡 Posibles mejoras futuras
+
+- Agregar estilos visuales más atractivos.
+- Implementar la opción de **eliminar nombres**en caso de un posible error de ingreso.
+- Añadir un botón para **reiniciar el sorteo**.y por supuesto limpiar los datos ya ingresados despues del sorteo
+
 ---
 
 ## 👨‍💻 Autor
@@ -74,5 +138,3 @@ git clone https://github.com/Felipe3838/challenge-amigo-secreto-Oracle-Next-Educ
 ## 📃 Licencia
 
 Este proyecto se ha desarrollado con fines educativos aplicables a los conocimientos visto dentro del curso **Oracle Nest Education**. Puedes usarlo, modificarlo y compartirlo libremente.
-
----
